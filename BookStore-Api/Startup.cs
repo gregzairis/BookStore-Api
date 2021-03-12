@@ -62,6 +62,7 @@ namespace BookStore_Api
             }); 
 
             services.AddSingleton<ILoggerService, LoggerService> ();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
 
             services.AddControllers();
            //TODO REMOVED services.AddRazorPages();
